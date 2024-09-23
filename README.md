@@ -1,6 +1,31 @@
-# machine-learning-courseworks
+# Machine Learning Courseworks
+Project Overview
 
-This repository includes 2 group projecta i participated in Imperial College London for the course "Introduction to Machine Learning". 
-We implemented the Decision Tree algorithm from scratch and then used it in a specific scenario to determine one of the indoor locations based on WIFI signal strengths collected from a mobile phone. Furthermore, implemented a pruning method ("If a single leaf reduces or does not change the validation error, then the node is pruned and replaced by a single leaf") to enhance the performance on unseen data and finally we evaluated the results' of our models.
-The second coursework is about Artificial Neural Networks that includes 2 parts. Firstly, we had to create a neural network mini-library (low-level implementation) of a multi-layered neural network, including a basic implementation of the backpropagation algorithm and implementing necessary functions for data preprocessing, training and evaluation. Also, we used PyTorch to create and train a neural network for regression and experimented with different architectures and we implemented an extensive hyperparameter tuning.
+This repository contains two machine learning coursework projects completed for the Introduction to Machine Learning course at Imperial College London. The courseworks focus on implementing machine learning algorithms from scratch, including decision trees and artificial neural networks, and applying them to real-world tasks.
+Coursework 1: Decision Tree Implementation
 
+In this coursework, a decision tree algorithm is implemented, using Object Oriented Design in Python, from scratch to classify a user's location based on Wi-Fi signal strengths in a multi-room environment. The goal is to predict the room in which the user is standing based on continuous Wi-Fi signal features.
+Coursework 2: Artificial Neural Networks for Regression
+
+In this coursework, a neural network architecture is developed to perform a regression task predicting house prices using the California Housing Prices Dataset. The task involves creating a neural network mini-library using NumPy and building a regression model using either the mini-library or PyTorch.
+Coursework 1: Decision Tree
+Problem
+
+The objective is to classify indoor locations based on Wi-Fi signal strength data collected from different rooms. The dataset consists of 2000 samples, each containing 7 Wi-Fi signal strength values and a room number (label). Both clean and noisy datasets are provided.
+Key Features
+
+    Decision Tree Algorithm: Implemented a recursive decision tree using information gain to find the best split points for continuous features.
+    10-Fold Cross-Validation: Used 10-fold cross-validation to evaluate the model on both clean and noisy datasets.
+    Pruning: Implemented post-pruning to improve generalization on noisy data.
+    Metrics: Evaluated using confusion matrix, accuracy, recall, precision, and F1-scores.
+
+Coursework 2: Artificial Neural Networks
+Problem
+
+The task is to predict the median house prices in California based on features such as location, population, and proximity to the ocean. The dataset contains both numerical and categorical data with missing values.
+Key Features
+
+    Neural Network Mini-Library: Implemented a neural network mini-library from scratch using NumPy. The library includes linear layers, activation functions, a training module, and a preprocessing module for normalizing data.
+    PyTorch Implementation: Built and trained a regression model using PyTorch for predicting house prices.
+    Hyperparameter Tuning: Performed hyperparameter optimization to improve model performance using a grid search approach.
+    Evaluation Metrics: Used root mean square error (RMSE) and R2-score to evaluate the model's performance.
